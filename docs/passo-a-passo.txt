@@ -49,6 +49,8 @@ curl -H "Authorization: Bearer $SESSION_TOKEN" \
 curl -H "Authorization: Bearer $SESSION_TOKEN" \
 "http://127.0.0.1:8000/download/directory?bucket_name=datalake&prefix=docs&local_directory=/Users/gabrielazevedo/Downloads/docs"
 
+Falta download de diretorio 
+
 6️⃣ Git – salvar e commitar sem merge
 -------------------------------------
 git add .
