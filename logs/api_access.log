@@ -1,0 +1,224 @@
+2025-08-11 17:07:36,084 - minio_datalake_app - ERROR - API: Falha na conexao com Minio para o usuario 'amanda': path in endpoint is not allowed
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 35, in check_minio_connection
+    client = MinioClient(
+             ^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/src/minio_client.py", line 17, in __init__
+    self.client = Minio(
+                  ^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/api.py", line 155, in __init__
+    self._base_url = BaseURL(
+                     ^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 551, in __init__
+    url = _parse_url(endpoint)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 512, in _parse_url
+    raise ValueError("path in endpoint is not allowed")
+ValueError: path in endpoint is not allowed
+2025-08-11 17:09:03,973 - minio_datalake_app - ERROR - API: Falha na conexao com Minio para o usuario 'amanda': path in endpoint is not allowed
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 35, in check_minio_connection
+    client = MinioClient(
+             ^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/src/minio_client.py", line 17, in __init__
+    self.client = Minio(
+                  ^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/api.py", line 155, in __init__
+    self._base_url = BaseURL(
+                     ^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 551, in __init__
+    url = _parse_url(endpoint)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 512, in _parse_url
+    raise ValueError("path in endpoint is not allowed")
+ValueError: path in endpoint is not allowed
+2025-08-11 17:10:10,579 - minio_datalake_app - ERROR - API: Falha na conexao com Minio para o usuario 'amanda': path in endpoint is not allowed
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 35, in check_minio_connection
+    client = MinioClient(
+             ^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/src/minio_client.py", line 17, in __init__
+    self.client = Minio(
+                  ^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/api.py", line 155, in __init__
+    self._base_url = BaseURL(
+                     ^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 551, in __init__
+    url = _parse_url(endpoint)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 512, in _parse_url
+    raise ValueError("path in endpoint is not allowed")
+ValueError: path in endpoint is not allowed
+2025-08-11 17:12:22,005 - minio_datalake_app - ERROR - API: Falha na conexao com Minio para o usuario 'amanda': path in endpoint is not allowed
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 35, in check_minio_connection
+    client = MinioClient(
+             ^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/src/minio_client.py", line 17, in __init__
+    self.client = Minio(
+                  ^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/api.py", line 155, in __init__
+    self._base_url = BaseURL(
+                     ^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 551, in __init__
+    url = _parse_url(endpoint)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 512, in _parse_url
+    raise ValueError("path in endpoint is not allowed")
+ValueError: path in endpoint is not allowed
+2025-08-11 17:12:25,964 - minio_datalake_app - ERROR - API: Falha na conexao com Minio para o usuario 'amanda': path in endpoint is not allowed
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 35, in check_minio_connection
+    client = MinioClient(
+             ^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/src/minio_client.py", line 17, in __init__
+    self.client = Minio(
+                  ^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/api.py", line 155, in __init__
+    self._base_url = BaseURL(
+                     ^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 551, in __init__
+    url = _parse_url(endpoint)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 512, in _parse_url
+    raise ValueError("path in endpoint is not allowed")
+ValueError: path in endpoint is not allowed
+2025-08-11 17:14:30,789 - minio_datalake_app - ERROR - API: Falha na conexao com Minio para o usuario 'amanda': path in endpoint is not allowed
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 48, in check_minio_connection
+    service = ListService(
+              ^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/src/list_service.py", line 11, in __init__
+    self.minio_client = MinioClient(access_key=access_key, secret_key=secret_key, endpoint=endpoint)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/src/minio_client.py", line 17, in __init__
+    self.client = Minio(
+                  ^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/api.py", line 155, in __init__
+    self._base_url = BaseURL(
+                     ^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 551, in __init__
+    url = _parse_url(endpoint)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 512, in _parse_url
+    raise ValueError("path in endpoint is not allowed")
+ValueError: path in endpoint is not allowed
+2025-08-11 17:16:07,624 - minio_datalake_app - ERROR - API: Falha na conexao com Minio para o usuario 'amanda': path in endpoint is not allowed
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 46, in check_minio_connection
+    service = ListService(
+              ^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/src/list_service.py", line 11, in __init__
+    self.minio_client = MinioClient(access_key=access_key, secret_key=secret_key, endpoint=endpoint)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/src/minio_client.py", line 17, in __init__
+    self.client = Minio(
+                  ^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/api.py", line 155, in __init__
+    self._base_url = BaseURL(
+                     ^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 551, in __init__
+    url = _parse_url(endpoint)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 512, in _parse_url
+    raise ValueError("path in endpoint is not allowed")
+ValueError: path in endpoint is not allowed
+2025-08-11 17:17:17,180 - minio_datalake_app - ERROR - API: Falha na conexao com Minio para o usuario 'amanda': path in endpoint is not allowed
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 48, in check_minio_connection
+    service = ListService(
+              ^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/src/list_service.py", line 11, in __init__
+    self.minio_client = MinioClient(access_key=access_key, secret_key=secret_key, endpoint=endpoint)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/src/minio_client.py", line 17, in __init__
+    self.client = Minio(
+                  ^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/api.py", line 155, in __init__
+    self._base_url = BaseURL(
+                     ^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 551, in __init__
+    url = _parse_url(endpoint)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/helpers.py", line 512, in _parse_url
+    raise ValueError("path in endpoint is not allowed")
+ValueError: path in endpoint is not allowed
+2025-08-11 17:20:46,149 - minio_datalake_app - INFO - MinioClient inicializado com endpoint: 127.0.0.1:9000 (secure=False)
+2025-08-11 17:20:46,200 - minio_datalake_app - INFO - API: Conexão com Minio bem-sucedida para o usuário 'amanda'.
+2025-08-11 17:25:10,503 - minio_datalake_app - INFO - MinioClient inicializado com endpoint: 127.0.0.1:9000 (secure=False)
+2025-08-11 17:25:10,537 - minio_datalake_app - INFO - API: Conexão com Minio bem-sucedida para o usuário 'amanda'.
+2025-08-11 17:33:14,243 - minio_datalake_app - INFO - MinioClient inicializado com endpoint: 127.0.0.1:9000 (secure=False)
+2025-08-11 17:33:14,279 - minio_datalake_app - INFO - API: Conexão com Minio bem-sucedida para o usuário 'amanda'.
+2025-08-11 17:34:36,622 - minio_datalake_app - INFO - MinioClient inicializado com endpoint: 127.0.0.1:9000 (secure=False)
+2025-08-11 17:34:36,643 - minio_datalake_app - INFO - API: Conexão com Minio bem-sucedida para o usuário 'amanda'.
+2025-08-11 17:37:05,024 - minio_datalake_app - INFO - MinioClient inicializado com endpoint: 127.0.0.1:9000 (secure=False)
+2025-08-11 17:37:05,046 - minio_datalake_app - INFO - API: Conexão com Minio bem-sucedida para o usuário 'amanda'.
+2025-08-11 17:37:09,839 - minio_datalake_app - INFO - MinioClient inicializado com endpoint: 127.0.0.1:9000 (secure=False)
+2025-08-11 17:40:50,636 - minio_datalake_app - INFO - MinioClient inicializado com endpoint: 127.0.0.1:9000 (secure=False)
+2025-08-11 17:40:50,658 - minio_datalake_app - INFO - API: Conexão com Minio bem-sucedida para o usuário 'amanda'.
+2025-08-11 17:42:18,916 - minio_datalake_app - INFO - MinioClient inicializado com endpoint: 127.0.0.1:9000 (secure=False)
+2025-08-11 17:42:18,950 - minio_datalake_app - INFO - API: Conexão com Minio bem-sucedida para o usuário 'amanda'.
+2025-08-11 17:42:24,153 - minio_datalake_app - INFO - MinioClient inicializado com endpoint: 127.0.0.1:9000 (secure=False)
+2025-08-11 17:42:24,153 - minio_datalake_app - ERROR - API: Falha ao listar buckets: 'ListService' object has no attribute 'list_buckets'
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 93, in list_all_buckets
+    buckets = service.list_buckets()
+              ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ListService' object has no attribute 'list_buckets'
+2025-08-11 17:46:43,249 - minio_datalake_app - INFO - MinioClient inicializado com endpoint: 127.0.0.1:9000 (secure=False)
+2025-08-11 17:46:43,272 - minio_datalake_app - ERROR - API: Falha na conexão com Minio para o usuário 'minioadmin': S3 operation failed; code: InvalidAccessKeyId, message: The Access Key Id you provided does not exist in our records., resource: /, request_id: 185AD15D40BB0289, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 58, in check_minio_connection
+    buckets = service.list_all_buckets()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/src/list_service.py", line 12, in list_all_buckets
+    return list(self.minio_client.client.list_buckets())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/api.py", line 680, in list_buckets
+    response = self._execute("GET")
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/api.py", line 443, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/Users/gabrielazevedo/projects/src/IC/.venv/lib/python3.11/site-packages/minio/api.py", line 426, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: InvalidAccessKeyId, message: The Access Key Id you provided does not exist in our records., resource: /, request_id: 185AD15D40BB0289, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8
+2025-08-11 17:46:53,655 - minio_datalake_app - INFO - MinioClient inicializado com endpoint: 127.0.0.1:9000 (secure=False)
+2025-08-11 17:46:53,680 - minio_datalake_app - INFO - API: Conexão com Minio bem-sucedida para o usuário 'amanda'.
+2025-08-11 17:47:01,341 - minio_datalake_app - INFO - MinioClient inicializado com endpoint: 127.0.0.1:9000 (secure=False)
+2025-08-14 10:24:48,831 - minio_datalake_app - ERROR - API: Falha na conexão com Minio para o usuário 'amanda': ListService.__init__() got an unexpected keyword argument 'access_key'
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 52, in check_minio_connection
+    service = ListService(
+              ^^^^^^^^^^^^
+TypeError: ListService.__init__() got an unexpected keyword argument 'access_key'
+2025-08-14 10:25:08,378 - minio_datalake_app - ERROR - API: Falha na conexão com Minio para o usuário 'amanda': ListService.__init__() got an unexpected keyword argument 'access_key'
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 52, in check_minio_connection
+    service = ListService(
+              ^^^^^^^^^^^^
+TypeError: ListService.__init__() got an unexpected keyword argument 'access_key'
+2025-08-14 10:25:40,124 - minio_datalake_app - ERROR - API: Falha na conexão com Minio para o usuário 'minioadmin': ListService.__init__() got an unexpected keyword argument 'access_key'
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 52, in check_minio_connection
+    service = ListService(
+              ^^^^^^^^^^^^
+TypeError: ListService.__init__() got an unexpected keyword argument 'access_key'
+2025-08-14 10:29:04,702 - minio_datalake_app - ERROR - API: Falha na conexao com Minio para o usuario 'minioadmin': ListService.__init__() got an unexpected keyword argument 'access_key'
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 51, in check_minio_connection
+    service = ListService(
+              ^^^^^^^^^^^^
+TypeError: ListService.__init__() got an unexpected keyword argument 'access_key'
+2025-08-14 10:29:49,883 - minio_datalake_app - ERROR - API: Falha na conexao com Minio para o usuario 'minioadmin': ListService.__init__() got an unexpected keyword argument 'access_key'
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 51, in check_minio_connection
+    service = ListService(
+              ^^^^^^^^^^^^
+TypeError: ListService.__init__() got an unexpected keyword argument 'access_key'
+2025-08-14 10:32:56,215 - minio_datalake_app - ERROR - API: Falha na conexão com Minio para o usuário 'minioadmin': ListService.__init__() got an unexpected keyword argument 'access_key'
+Traceback (most recent call last):
+  File "/Users/gabrielazevedo/projects/src/IC/api/routes.py", line 52, in check_minio_connection
+    service = ListService(
+              ^^^^^^^^^^^^
+TypeError: ListService.__init__() got an unexpected keyword argument 'access_key'

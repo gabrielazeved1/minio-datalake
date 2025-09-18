@@ -1,0 +1,61 @@
+==============================
+IC MinIO API - Setup Rápido (Poetry)
+==============================
+
+1️⃣ Entrar na branch correta
+----------------------------
+git checkout feature/minio-api
+
+2️⃣ Instalar dependências com Poetry
+-----------------------------------
+poetry install
+poetry shell   # ativa o ambiente virtual
+
+3️⃣ Configurar o .env
+--------------------
+# Crie o arquivo .env na raiz do projeto
+MINIO_ENDPOINT=127.0.0.1:9000
+MINIO_ACCESS_KEY=minio
+MINIO_SECRET_KEY=miniol23
+MINIO_SECURE=False
+
+4️⃣ Rodar a API
+---------------
+poetry run uvicorn src.main:app --reload
+
+5️⃣ Testes usando curl
+---------------------
+# Login
+SESSION_TOKEN=$(curl -s -X POST "http://127.0.0.1:8000/login" \
+  -H "Content-Type: application/json" \
+  -d '{"access_key":"amanda","secret_key":"amanda123"}' | jq -r '.session_token')
+
+# Listar buckets
+curl -H "Authorization: Bearer $SESSION_TOKEN" "http://127.0.0.1:8000/buckets"
+
+# Listar conteúdo de um bucket
+curl -H "Authorization: Bearer $SESSION_TOKEN" "http://127.0.0.1:8000/buckets/datalake"
+
+# Upload de arquivo
+curl -X POST -H "Authorization: Bearer $SESSION_TOKEN" \
+  -F "file=@/Users/gabrielazevedo/projects/src/IC/data/arquivo.csv" \
+  "http://127.0.0.1:8000/upload/file?bucket_name=datalake&prefix=docs"
+
+# Download de arquivo
+curl -H "Authorization: Bearer $SESSION_TOKEN" \
+"http://127.0.0.1:8000/download/file?bucket_name=datalake&object_name=docs/arquivo.csv&local_filename=/Users/gabrielazevedo/Downloads/arquivo.csv"
+
+# Download de diretório
+curl -H "Authorization: Bearer $SESSION_TOKEN" \
+"http://127.0.0.1:8000/download/directory?bucket_name=datalake&prefix=docs&local_directory=/Users/gabrielazevedo/Downloads/docs"
+
+Falta download de diretorio 
+
+6️⃣ Git – salvar e commitar sem merge
+-------------------------------------
+git add .
+git commit -m "Atualização da API MinIO: upload, list e download funcional"
+git push origin feature/minio-api
+# NÃO FAZER merge ainda
+
+poetry run python researchers_scripts/minio_loader.py
