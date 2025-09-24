@@ -1,5 +1,5 @@
 # Projeto: Data Lake Local para Pesquisa - Iniciação Científica na UFU/LMest
-
+### proximo passo é transformar isso em biblioteca!!!
 Este projeto foi desenvolvido como parte de uma Iniciação Científica no laboratório LMest da UFU, com o objetivo de criar uma solução de Data Lake local e acessível para a pesquisa. A plataforma utiliza o MinIO para o armazenamento de dados, complementada por scripts Python para automatizar e facilitar o acesso aos dados.
 
 ---
